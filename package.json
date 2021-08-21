@@ -1,0 +1,25 @@
+{
+  "name": "@dao/card",
+  "version": "0.0.1",
+  "description": "一款基于中国大中华区的身份证规则验证库",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dao-projects/card.git"
+  },
+  "keywords": [
+    "card",
+    "ts",
+    "npm",
+    "js"
+  ],
+  "author": "daoxin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dao-projects/card/issues"
+  },
+  "homepage": "https://github.com/dao-projects/card#readme"
+}
