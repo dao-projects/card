@@ -2,9 +2,11 @@
   "name": "@dao/card",
   "version": "0.0.1",
   "description": "一款基于中国大中华区的身份证规则验证库",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "test"
+    "build": "tsc",
+    "dev": "tsc",
+    "serve": "npm run dev"
   },
   "repository": {
     "type": "git",
