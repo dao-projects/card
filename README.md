@@ -7,15 +7,18 @@
 
 
 ```
-$ npm i @dao/card  //或 yarn add @dao/card
+$ npm i @daoxin/card  //或 yarn add @daoxin/card
 
 
-const Card = require('@dao/card').default   // 获取 import Card from '@dao/card'
+const Card = require('@daoxin/card').default   // 获取 import Card from '@daoxin/card'
 
-const card=new Card('513022199509151234',true)  //身份证号：513022199509151234 ，true：是否返回解析的身份证信息
-
-console.log(card.isValid())
-
+console.log('身份证no',new Card("513022199509151233").isValid()) //身份证no false
+console.log('身份证ok',new Card("513022199509151234").isValid()) //身份证ok true
+console.log('身份证ok_info',new Card("173022199509151234",true).isValid()) // 身份证ok_info { valid: false }
+console.log('身份证ok_info',new Card("513022199509151234",true).isValid())  //身份证ok_info {valid: true,id: '513022199509151234',length: 18,y: '1995',m: '09',d: '15',sex: '男',province: '四川省'}
+console.log('身份证no_info',new Card("513022199519131234",true).isValid()) //身份证no_info { valid: false }
+console.log('身份证no_info',new Card("16302219930910123",true).isValid()) //身份证no_info { valid: false }
+console.log('身份证no',new Card().isValid()) //身份证no false
 ```
 
 
@@ -108,6 +111,24 @@ console.log(card.isValid())
 ### 各省代码含义
 
 ```
+
+华北：北京11，天津12，河北13，山西14，内蒙古15
+
+东北： 辽宁21，吉林22，黑龙江23
+
+华东： 上海31，江苏32，浙江33，安徽34，福建35，江西36，山东37
+
+华中： 河南41，湖北42，湖南43
+
+华南： 广东44，广西45，海南46
+
+西南： 四川51，贵州52，云南53，西藏54，重庆50
+
+西北： 陕西61，甘肃62，青海63，宁夏64，新疆65
+
+特别：台湾71，香港81，澳门82
+
+
 一、四个直辖市：
 1、北京11
 2、天津12
@@ -151,11 +172,7 @@ console.log(card.isValid())
 23、台湾省710000
 ```
 
-### 个人身份比对
-
-```
-公安部负责公民身份号码的编制和组织实施工作。公民个人在进行社会和经济活动（例如到电信、银行办理相关业务）时，向有关机构主动提交身份证件，有关机构工作人员（称为“核查人”或“用户”）将公民（称为“被核查人”）主动提交的姓名、身份号码等信息通过电信运营商的网络通道传送至公安部“全国公民身份信息数据库”进行比对，得到“一致”或“不一致”的比对结果，如果“一致”还可以进一步比对照片，以确认照片与身份证提交者本人是否一致，不提供任何其他信息。根据不同的身份，公民的身份证号码各不相同。
-```
+* 以下信息不一定准确（谨慎参考）
 
 ```
 身份证号码解密|身份证尾数校验码算法|ID card information

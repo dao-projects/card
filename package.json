@@ -1,6 +1,6 @@
 {
   "name": "@daoxin/card",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "一款基于中国大中华区的身份证规则验证库",
   "main": "lib/index.js",
   "scripts": {
