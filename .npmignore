@@ -8,3 +8,9 @@ lerna-debug.log*
 
 # Dependency directories
 node_modules/
+src/
+test/
+*.md
+package-lock.json*
+tsconfig.json*
+
