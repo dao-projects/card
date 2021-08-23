@@ -1,7 +1,7 @@
 {
   "name": "@daoxin/card",
-  "version": "0.0.5",
-  "description": "一款基于中国大中华区的身份证规则验证库",
+  "version": "0.0.6",
+  "description": "一款基于大中华区的身份证规则验证库",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
@@ -19,7 +19,7 @@
     "js"
   ],
   "author": "daoxin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dao-projects/card/issues"
   },
