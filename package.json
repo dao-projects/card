@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc",
-    "serve": "npm run dev"
+    "serve": "npm run dev",
+    "push":"npm publish --access=public"
   },
   "repository": {
     "type": "git",
